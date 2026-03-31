@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Sofedi/SOFEDI
+  branch: main
+
+media_folder: images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Page d'accueil"
+        file: "content.json"
+        fields:
+          - {label: "Texte de présentation", name: "presentation", widget: "text"}
+          - {label: "Email de contact", name: "email", widget: "string"}
+          - {label: "Téléphone", name: "telephone", widget: "string"}
+          - {label: "Adresse", name: "adresse", widget: "string"}
